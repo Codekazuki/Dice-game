@@ -165,3 +165,43 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  main {
+    position: relative;
+    width: 100rem;
+    height: 60rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+  }
+  .btn::first-letter {
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 0.7rem;
+  }
+
+  .btn--new {
+    top: 4rem;
+    padding: 0.2rem;
+    color: green;
+  }
+  .btn--roll {
+    top: 55.3rem;
+    color: greenyellow;
+    left: 8rem;
+    padding: 0.2rem;
+  }
+  .btn--hold {
+    top: 55.3rem;
+    color: greenyellow;
+    left: 27rem;
+    padding: 0.2rem;
+  }
+}
