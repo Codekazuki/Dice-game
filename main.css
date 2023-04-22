@@ -190,7 +190,7 @@ main {
   .btn--new {
     top: 4rem;
     padding: 0.2rem;
-    color: green;
+    color: rgb(26, 226, 26);
   }
   .btn--roll {
     top: 55.3rem;
@@ -200,7 +200,7 @@ main {
   }
   .btn--hold {
     top: 55.3rem;
-    color: greenyellow;
+    color: rgb(147, 236, 14);
     left: 27rem;
     padding: 0.2rem;
   }
