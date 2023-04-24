@@ -118,7 +118,7 @@ main {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
 
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
@@ -128,9 +128,11 @@ main {
   display: inline-block;
   margin-right: 0.7rem;
 }
-
+.btn--how {
+  top: 2rem;
+}
 .btn--new {
-  top: 4rem;
+  top: 8rem;
 }
 .btn--roll {
   top: 39.3rem;
@@ -159,16 +161,22 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #0eb345;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: #f8f7f7;
 }
+.player--winner .score {
+  font-weight: 700;
+  color: #f8f7f7;
+}
+
 .hidden {
   display: none;
 }
+
 @media screen and (max-width: 480px) {
   main {
     position: relative;
@@ -182,6 +190,34 @@ main {
     overflow: hidden;
     display: flex;
   }
+  .player {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+  }
+  .current {
+    background-color: #362a2d;
+    position: relative;
+    opacity: 0.8;
+    bottom: 10rem;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
+
+  #name--0 {
+    top: 4rem;
+    text-align: center;
+  }
+  #name--1 {
+    top: 4rem;
+    text-align: center;
+  }
   .btn::first-letter {
     font-size: 2.4rem;
     display: inline-block;
@@ -189,20 +225,39 @@ main {
   }
 
   .btn--new {
-    top: 4rem;
-    padding: 0.2rem;
+    top: 14rem;
+    padding: 0.1rem;
     color: rgb(26, 226, 26);
+    font-weight: 200;
+    font: 0.8rem;
+    text-transform: initial;
   }
   .btn--roll {
-    top: 55.3rem;
-    color: greenyellow;
+    top: 51.3rem;
+    color: rgb(12, 12, 12);
     left: 8rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
   }
   .btn--hold {
-    top: 55.3rem;
-    color: rgb(147, 236, 14);
+    top: 51.3rem;
+    color: rgb(8, 8, 8);
     left: 27rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
+  }
+  .dice {
+    position: absolute;
+    left: 50%;
+    top: 21.5rem;
+    transform: translateX(-50%);
+    height: 10rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 25%;
+  }
+  .score {
+    font-size: 8rem;
+    font-weight: 100;
+    color: #f8f4f8;
+    top: 8rem;
+    position: relative;
   }
 }
