@@ -207,10 +207,10 @@ h1 {
   background-color: #824e36;
 }
 .show-modal {
-  top: 2rem;
+  top: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
   main {
     position: relative;
     width: 100rem;
@@ -292,5 +292,63 @@ h1 {
     color: #f8f4f8;
     top: 8rem;
     position: relative;
+  }
+  .show-modal {
+    top: 9rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #0eb345;
+  }
+  p {
+    font-size: small;
+    font-family: cursive;
+    color: #2b0a13;
+  }
+  h1 {
+    font-size: large;
+    color: #bf2e34;
+  }
+
+  .close-modal {
+    text-align: right;
+    padding: 1rem 3rem;
+    background-color: #8d2626;
+  }
+}
+@media screen and (max-width: 320px) {
+  #name--0 {
+    top: 4rem;
+    text-align: center;
+  }
+  #name--1 {
+    top: 4rem;
+    text-align: center;
+  }
+  .btn--hold {
+    top: 51.3rem;
+    color: rgb(8, 8, 8);
+    left: 22rem;
+    padding: 0.1rem;
+  }
+  .show-modal {
+    top: 9rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #0eb345;
+  }
+  p {
+    font-size: small;
+    font-family: cursive;
+    color: #2b0a13;
+  }
+  h1 {
+    font-size: large;
+    color: #bf2e34;
+  }
+
+  .close-modal {
+    text-align: right;
+    padding: 1rem 3rem;
+    background-color: #8d2626;
   }
 }
