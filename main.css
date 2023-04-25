@@ -176,6 +176,39 @@ main {
 .hidden {
   display: none;
 }
+.hide {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+  border-radius: 3rem;
+}
+p {
+  font-size: large;
+  font-family: cursive;
+  color: #2b0a13;
+}
+h1 {
+  font-size: xx-large;
+  color: #bf2e34;
+}
+
+.close-modal {
+  text-align: right;
+  padding: 1rem 3rem;
+  background-color: #824e36;
+}
+.show-modal {
+  top: 2rem;
+}
 
 @media screen and (max-width: 480px) {
   main {

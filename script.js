@@ -1,4 +1,7 @@
 "use script";
+const modal = document.querySelector(".modal");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnOpenModal = document.querySelector(".show-modal");
 
 const player0El = document.querySelector(".player--0");
 const player1El = document.querySelector(".player--1");
@@ -15,6 +18,13 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
 let scores, currentScore, activePlayer, playing;
+
+const showModal = function () {
+  modal.classList.remove("hide");
+};
+const closeModal = function () {
+  modal.classList.add("hide");
+};
 
 const init = function () {
   scores = [0, 0];
@@ -83,3 +93,5 @@ btnHold.addEventListener("click", function () {
 });
 
 btnNew.addEventListener("click", init);
+btnOpenModal.addEventListener("click", showModal);
+btnCloseModal.addEventListener("click", closeModal);
