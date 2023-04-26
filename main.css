@@ -57,10 +57,11 @@ main {
 }
 
 .score {
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: 300;
   color: #c7365f;
   margin-bottom: auto;
+  font-variant: small-caps;
 }
 
 .player--active {
@@ -93,10 +94,11 @@ main {
   margin-bottom: 1rem;
   font-size: 1.7rem;
   color: #ddd;
+  text-align: center;
 }
 
 .current-score {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
@@ -104,7 +106,7 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #444;
+  color: #1a0606;
   background: none;
   border: none;
   font-family: inherit;
@@ -114,8 +116,8 @@ main {
   font-weight: 400;
   transition: all 0.2s;
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  /* background-color: rgba(255, 255, 255, 0.6); */
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 1.5rem;
@@ -162,6 +164,7 @@ main {
 
 .player--winner {
   background-color: #0eb345;
+  color: white;
 }
 
 .player--winner .name {
