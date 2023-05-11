@@ -65,10 +65,13 @@ main {
 }
 
 .player--active {
-  background-color: rgba(252, 6, 6, 0.4);
+  background-color: rgba(252, 63, 6, 0.4);
 }
 .player--active .name {
-  font-weight: 700;
+  font-weight: 900;
+  text-orientation: sideways-right;
+  transform: translate(-1.1rem, -2ex);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .player--active .score {
   font-weight: 400;
@@ -163,7 +166,7 @@ main {
 }
 
 .player--winner {
-  background-color: #0eb345;
+  background-color: #00ff55;
   color: white;
 }
 
