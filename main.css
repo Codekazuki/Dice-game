@@ -206,7 +206,11 @@ main {
 }
 
 p {
-  font-size: large;
+  font-family: "Rouge Script", cursive;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px #082b34;
+  font-size: medium;
   font-family: cursive;
   color: #2b0a13;
 }
@@ -214,6 +218,7 @@ h1 {
   font-size: xx-large;
   color: #bf2e34;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  font-family: "Rouge Script", cursive;
 }
 
 .close-modal {
